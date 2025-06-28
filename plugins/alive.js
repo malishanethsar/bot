@@ -104,11 +104,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
       newsletterName: '  |   MALIYA MD ',
       newsletterJid: "120363183696686259@newsletter",
     },   externalAdReply: { 
-title: 'UDMODZ-MD',
+title: 'QUEEN MALIYA MD',
 body: `Hi ${pushname} 💙`,
 mediaType: 1,
 sourceUrl: 'https://my2dila-dilalakiyas-projects.vercel.app/',
-thumbnailUrl: 'https://i.ibb.co/YTpv7Z4W/SulaMd.jpg',
+thumbnailUrl: 'https://files.catbox.moe/8ar1ke.jpg',
 renderLargerThumbnail: true,
 showAdAttribution: true
 }

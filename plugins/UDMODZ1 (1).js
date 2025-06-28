@@ -7,7 +7,7 @@ let baseUrl;
 })();
 
 
-const yourName = "> ᴘᴏᴡᴇʀᴇᴅ ʙʏ simi-ᴍᴅ";
+const yourName = "> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ";
 
 //twitter dl (x)
 cmd({
@@ -1230,7 +1230,7 @@ const spam = `
  
  🚮 clear chat
  
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ simi-ᴍᴅ
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliiya-ᴍᴅ
 `
 reply(spam)
 } catch (e) {
@@ -1623,7 +1623,7 @@ cmd({
             return reply("Failed to fetch the video. Please try again later.");
         }
         
-        let ytmsg = `╭━━━〔 *𝗤𝗨𝗘𝗘𝗡 SIMI* 〕━━━┈⊷
+        let ytmsg = `╭━━━〔 *maliya md* 〕━━━┈⊷
 ┇๏ *Title* -  ${yts.title}
 ┇๏ *Duration* - ${yts.timestamp}
 ┇๏ *Views* -  ${yts.views}
@@ -1631,7 +1631,7 @@ cmd({
 ┇๏ *Link* -  ${yts.url}
 ╰────────────────┈⊷
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ simi-ᴍᴅ😈`;
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ😈`;
 
 
         // Send video details
@@ -1682,7 +1682,7 @@ const yt = await ytsearch(q);
         return reply("Failed to fetch the audio. Please try again later.");
     }
     
-    let ytmsg = `╭━━━〔 *𝗤𝗨𝗘𝗘𝗡 SIMI* 〕━━━┈⊷
+    let ytmsg = `╭━━━〔 *maliya md* 〕━━━┈⊷
 ┇๏ *Tital* -  ${yts.title}
 ┇๏ *Duration* - ${yts.timestamp}
 ┇๏ *Views* -  ${yts.views}
@@ -1691,7 +1691,7 @@ const yt = await ytsearch(q);
 ╰────────────────┈⊷
 
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ simi-ᴍᴅ`;
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ`;
 
 
 
@@ -1849,7 +1849,7 @@ cmd({
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363183696686259@newsletter',
-                    newsletterName: "𝗤𝗨𝗘𝗘𝗡 SIMI",
+                    newsletterName: "maliya md",
                     serverMessageId: 190
                 }
             }
@@ -1876,7 +1876,7 @@ cmd({
                 if (userResponse === "1") {
                     await conn.sendMessage(chatID, {
                         video: { url: videoData.video },
-                        caption: "> ᴘᴏᴡᴇʀᴇᴅ ʙʏ simi-ᴍᴅ"
+                        caption: "> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ"
                     }, { quoted: receivedMessage });
                 } else if (userResponse === "2") {
                     await conn.sendMessage(chatID, {
@@ -1994,14 +1994,14 @@ cmd({
     const app = data.datalist.list[0];
     const appSize = (app.size / 1048576).toFixed(2); // Convert bytes to MB
 
-    const caption = `╭━━━〔 *𝗤𝗨𝗘𝗘𝗡 SIMI APK Downloader* 〕━━━┈⊷
+    const caption = `╭━━━〔 *maliya md APK Downloader* 〕━━━┈⊷
 ┃ 📦 *Name:* ${app.name}
 ┃ 🏋 *Size:* ${appSize} MB
 ┃ 📦 *Package:* ${app.package}
 ┃ 📅 *Updated On:* ${app.updated}
 ┃ 👨‍💻 *Developer:* ${app.developer.name}
 ╰━━━━━━━━━━━━━━━┈⊷
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ simi-ᴍᴅ`;
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ`;
 
     await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
 
@@ -2371,7 +2371,7 @@ cmd({
 ┇๏ *Title* - ${title}
 ┇๏ *Media Type* - ${media[0].type}
 ╰━━❑━⪼
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ simi-ᴍᴅ`;
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ`;
 
         // Send the media (video or image) to the user
         if (videoUrl) {

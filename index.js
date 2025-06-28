@@ -71,7 +71,7 @@ console.log('Bot connected to whatsapp ✅')
 
 let up = `SIMI MD connected successful ✅\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/bHXBV08/9242c844b83f7bf9.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://files.catbox.moe/8ar1ke.jpg` }, caption: up })
 
 }
 })
@@ -148,7 +148,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             
 //========OwnerReact========            
          
-if(senderNumber.includes("94760224138")){
+if(senderNumber.includes("94775309776")){
 if(isReact) return
 m.react("💗")
 }       

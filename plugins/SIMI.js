@@ -1698,7 +1698,7 @@ cmd({
     //
     // If you were previously using 'https://apis.davidcyriltech.my.id/youtube/mp3', and it was working
     // before it started throwing errors, you might consider trying it again or looking for alternatives.
-    let apiUrl = `https://apis.davidcyriltech.my.id/youtube/mp3?url=${encodeURIComponent(yts.url)}`; 
+    let apiUrl = `https://api.another-ytdl.com/convert?video_url=${encodeURIComponent(yts.url)}&format=mp3`; 
     // --- END CORRECTED LINE ---
         
     let response = await fetch(apiUrl);

@@ -1673,37 +1673,48 @@ cmd({
         reply("An error occurred. Please try again later.");
     }
 });  
-       
+       cmd({  
+    pattern: "song",   
+    alias: ["ytdl3", "play","audio","mp3"],   
+    react: "🎧",   
+    desc: "Download Youtube song",
+    category: "main",   
+    use: '.song < Yt url or Name >',   
+    filename: __filename },   
+    async (conn, mek, m, { from, prefix, quoted, q, reply }) =>   
+    { try { if (!q) return await reply("Please provide a YouTube URL or song name.");
 
-cmd({ 
-     pattern: "song", 
-     alias: ["ytdl3", "play","audio","mp3"], 
-     react: "🎧", 
-     desc: "Download Youtube song",
-     category: "main", 
-     use: '.song < Yt url or Name >', 
-     filename: __filename }, 
-     async (conn, mek, m, { from, prefix, quoted, q, reply }) => 
-     
-     { try { if (!q) return await reply("Please provide a YouTube URL or song name.");
-
-await reply("කරුනාකර මදක් ඉදපන් 😌.");
-        
-const yt = await ytsearch(q);
+    await reply("කරුනාකර මදක් ඉදපන් 😌.");
+            
+    const yt = await ytsearch(q);
     if (yt.results.length < 1) return reply("No results found!");
+        
+    let yts = yt.results[0];   
     
-    let yts = yt.results[0];  
-    let apiUrl = `// This is just an example, you would need to find a reliable public API
-let alternativeApiUrl = `https://some-other-youtube-api.com/download?url=${encodeURIComponent(yts.url)}&format=mp3`;
-// ... then fetch from this URL}`;
-    
+    // --- CORRECTED LINE BELOW ---
+    // You MUST replace 'https://YOUR_ACTUAL_YOUTUBE_API_HERE' with a real, working YouTube audio download API endpoint.
+    // For example, if you use a public API like 'https://api.example.com/youtube/mp3', it would look like this:
+    // let apiUrl = `https://api.example.com/youtube/mp3?url=${encodeURIComponent(yts.url)}`;
+    //
+    // If you were previously using 'https://apis.davidcyriltech.my.id/youtube/mp3', and it was working
+    // before it started throwing errors, you might consider trying it again or looking for alternatives.
+    let apiUrl = `https://apis.davidcyriltech.my.id/youtube/mp3?url=${encodeURIComponent(yts.url)}`; 
+    // --- END CORRECTED LINE ---
+        
     let response = await fetch(apiUrl);
     let data = await response.json();
     
-    if (data.status !== 200 || !data.success || !data.result.downloadUrl) {
-        return reply("Failed to fetch the audio. Please try again later.");
+    // Added more robust error checking and logging for debugging
+    if (response.status !== 200) {
+        console.error(`API returned non-200 status: ${response.status} - ${response.statusText}`);
+        return reply(`Failed to connect to the audio download service (Status: ${response.status}). Please try again later.`);
     }
-    
+
+    if (!data || !data.success || !data.result || !data.result.downloadUrl) {
+        console.error("API response missing expected data:", data);
+        return reply("The audio download service did not return a valid download link. It might be an issue with the API or the video itself. Please try another song or later.");
+    }
+        
     let ytmsg = `╭━━━〔 *MALIYA MD* 〕━━━┈⊷
 ┇๏ *Tital* -  ${yts.title}
 ┇๏ *Duration* - ${yts.timestamp}
@@ -1712,19 +1723,15 @@ let alternativeApiUrl = `https://some-other-youtube-api.com/download?url=${encod
 ┇๏ *Link* -  ${yts.url}
 ╰────────────────┈⊷
 
-
 > ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ`;
 
-
-
-
-// Send song details
+    // Send song details (image is optional, check if data.result.image exists)
     await conn.sendMessage(from, { image: { url: data.result.image || '' }, caption: ytmsg }, { quoted: mek });
-    
-    // Send audio file
+        
+    // Send audio file as an audio message
     await conn.sendMessage(from, { audio: { url: data.result.downloadUrl }, mimetype: "audio/mpeg" }, { quoted: mek });
-    
-    // Send document file
+        
+    // Send audio file as a document (useful for larger files or if audio message fails)
     await conn.sendMessage(from, { 
         document: { url: data.result.downloadUrl }, 
         mimetype: "audio/mpeg", 
@@ -1732,14 +1739,13 @@ let alternativeApiUrl = `https://some-other-youtube-api.com/download?url=${encod
         caption: `> ᴘᴏᴡᴇʀᴇᴅ ʙʏ kaviya-ᴍᴅ`
     }, { quoted: mek });
 
-} catch (e) {
-    console.log(e);
-    reply("An error occurred. Please try again later.");
-}
-
+    } catch (e) {
+        // Log the full error for debugging in your console/terminal
+        console.error("Error in song command:", e); 
+        // Provide a user-friendly message
+        reply("An error occurred while trying to download the song. Please try again later.");
+    }
 });
-
-
 cmd({
     pattern: 'phdl',
     desc: 'Download and send videos from Pornhub',

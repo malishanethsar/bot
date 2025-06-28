@@ -1643,7 +1643,7 @@ cmd({
             return reply("Failed to fetch the video. Please try again later.");
         }
         
-        let ytmsg = `╭━━━〔 *KAVIYA MD* 〕━━━┈⊷
+        let ytmsg = `╭━━━〔 *MALIYA MD* 〕━━━┈⊷
 ┇๏ *Title* -  ${yts.title}
 ┇๏ *Duration* - ${yts.timestamp}
 ┇๏ *Views* -  ${yts.views}
@@ -1651,7 +1651,7 @@ cmd({
 ┇๏ *Link* -  ${yts.url}
 ╰────────────────┈⊷
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ simi-ᴍᴅ😈`;
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ😈`;
 
 
         // Send video details
@@ -1702,7 +1702,7 @@ const yt = await ytsearch(q);
         return reply("Failed to fetch the audio. Please try again later.");
     }
     
-    let ytmsg = `╭━━━〔 *KAVIYA MD* 〕━━━┈⊷
+    let ytmsg = `╭━━━〔 *MALIYA MD* 〕━━━┈⊷
 ┇๏ *Tital* -  ${yts.title}
 ┇๏ *Duration* - ${yts.timestamp}
 ┇๏ *Views* -  ${yts.views}
@@ -1711,7 +1711,7 @@ const yt = await ytsearch(q);
 ╰────────────────┈⊷
 
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ kaviya-ᴍᴅ`;
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ`;
 
 
 
@@ -1795,9 +1795,9 @@ cmd({
 async (conn, mek, m, { from }) => {
     try {
         // Owner's contact info
-        const ownerNumber = '+94760224138'; // Replace this with the actual owner number
-        const ownerName = 'MR DILA'; // Replace this with the owner's name
-        const organization = 'DILA 📍'; // Optional: replace with the owner's organization
+        const ownerNumber = '+94775309776'; // Replace this with the actual owner number
+        const ownerName = 'maliya'; // Replace this with the owner's name
+        const organization = 'maliya📍'; // Optional: replace with the owner's organization
 
         // Create a vCard (contact card) for the owner
         const vcard = 'BEGIN:VCARD\n' +

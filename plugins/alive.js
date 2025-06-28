@@ -72,7 +72,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         }
         let desc = `*👋 Hello ${pushname}*
      
-     *|I'm 𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭 By UDMODZ*
+     *|I'm 𝗤𝗨𝗘𝗘𝗡 maliya mdBy maliya*
 
 *╭─「 ᴄᴏᴍᴍᴀɴᴅ ᴘᴀɴᴇʟ 」*
 *│◈ ʀᴜɴᴛɪᴍᴇ :* ${runtime(process.uptime())}
@@ -91,7 +91,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *│ 9   OTHER*
 *╰─────────
 
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴜᴅᴍᴏᴅᴢ-ᴍᴅ`;
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ maliya-ᴍᴅ`;
 
 
 
@@ -101,14 +101,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     forwardingScore: 0,
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterName: '  |   𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭 ',
+      newsletterName: '  |   MALIYA MD ',
       newsletterJid: "120363183696686259@newsletter",
     },   externalAdReply: { 
 title: 'UDMODZ-MD',
 body: `Hi ${pushname} 💙`,
 mediaType: 1,
-sourceUrl: 'https://queen-udmodz.vercel.app/',
-thumbnailUrl: 'https://i.ibb.co/qL9HpVJp/4795.jpg',
+sourceUrl: 'https://my2dila-dilalakiyas-projects.vercel.app/',
+thumbnailUrl: 'https://i.ibb.co/YTpv7Z4W/SulaMd.jpg',
 renderLargerThumbnail: true,
 showAdAttribution: true
 }
@@ -131,7 +131,7 @@ showAdAttribution: true
 ${menu.owner}│ 
 ╰──────────────────●●►
 
-> *𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭*`);
+> *MALIYA MD *`);
                         break;
                     case '2':               
                         reply(`*◈╾──CONVERT MENU──╼◈*
@@ -141,7 +141,7 @@ ${menu.owner}│
 ${menu.convert}│
 ╰──────────────────●●►
 
-> 𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭`);
+> MALIYA MD *`);
                         break;
                     case '3':               
                         reply(`*◈╾──AI MENU──╼◈*
@@ -151,7 +151,7 @@ ${menu.convert}│
 ${menu.ai}│
 ╰──────────────────●●►
 
-> 𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭`);
+> MALIYA MD `);
                         break;
                     case '4':               
                         reply(`*◈╾──SEARCH MENU──╼◈*
@@ -161,7 +161,7 @@ ${menu.ai}│
 ${menu.search}│
 ╰──────────────────●●►
 
-> 𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭`);
+> MALIYA MD `);
                         break;
                     case '5':               
                         reply(`*◈╾──DOWNLOAD MENU──╼◈*
@@ -171,7 +171,7 @@ ${menu.search}│
 ${menu.download}│
 ╰──────────────────●●►
 
-> 𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭`);
+> MALIYA MD `);
                         break;
                     case '7':               
                         reply(`*◈╾──MAIN MENU──╼◈*
@@ -192,7 +192,7 @@ ${menu.main}│
 ${menu.group}│
 ╰──────────────────●●►
 
-> 𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭`);
+> MALIYA MD `);
                        break;
                     case '6':               
                         reply(`*◈╾──FUN MENU──╼◈*
@@ -202,7 +202,7 @@ ${menu.group}│
 ${menu.fun}│
 ╰──────────────────●●►
 
-> 𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭`);
+> MALIYA MD `);
 
                         break;
                     case '9':               
@@ -215,7 +215,7 @@ ${menu.tools}│
 ╰──────────────────●●►
 
 
-> 𝗤𝗨𝗘𝗘𝗡 𝗨𝗗𝗠𝗢𝗗𝗭`);
+> MALIYA MD `);
 
 
                         break;

@@ -1817,7 +1817,7 @@ async (conn, mek, m, { from }) => {
 
         // Send a reply message that references the vCard
         await conn.sendMessage(from, {
-            text: `contact mr dila to this error fix: ${ownerName}`,
+            text: `contact  : ${ownerName}`,
             contextInfo: {
                 mentionedJid: [ownerNumber.replace('+94760224138') + '+94760224138@s.whatsapp.net'], // Mention the owner
                 quotedMessageId: sentVCard.key.id // Reference the vCard message

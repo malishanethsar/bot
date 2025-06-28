@@ -1693,7 +1693,9 @@ const yt = await ytsearch(q);
     if (yt.results.length < 1) return reply("No results found!");
     
     let yts = yt.results[0];  
-    let apiUrl = `https://apis.davidcyriltech.my.id/youtube/mp3?url=${encodeURIComponent(yts.url)}`;
+    let apiUrl = `// This is just an example, you would need to find a reliable public API
+let alternativeApiUrl = `https://some-other-youtube-api.com/download?url=${encodeURIComponent(yts.url)}&format=mp3`;
+// ... then fetch from this URL}`;
     
     let response = await fetch(apiUrl);
     let data = await response.json();
